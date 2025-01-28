@@ -1,0 +1,205 @@
+<!--instructions pour utilisateur pour l'indiquer que tu as travailler sur html , on peut ecrire doctype en miniscule ,  -->
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>book store</title>
+       <!-- this meta pour la desciption bla bla -->
+       <meta charset = "UTF-8"/>
+       <meta name="description" content = "this is our book "/>
+       <!-- this is comment -->
+       <style></style>
+       <script></script>
+       <link rel="stylesheet" href=""/>
+  </head>
+  <body>
+    <!-- h1 - h6 heading=tittres --> 
+     <h1> <i>Ramadan Karim</i> </h1>
+     <!-- b=> Bold
+          strong=>Bold ;meme que bold mais strong pour  important text
+          i=>italique
+          em=>Emphasized;meme chose pour italique et Emphasized
+          mark=>highlighted text
+          u=> souligner sous le mot , inderline
+          small=>smaller
+          del=>delete
+          ins=>insered text
+          sub=>subscript
+          sup=>superscript
+          a=>les liens  des elements not de block it's inline si on ecrit deux liens ils seront juxtaposees , si on ajoute target on ouvre le lien dans une autre page
+          et on peut met des liens des pages de html , on peut aussi envoyer une paragraph dans une meme page en citant l'identifiant , ajouter un contact (email)
+          img=> ajouter des images  ona src  :mean source of picture  et alt: alternate text , width-hight : la taille 
+          ul=>unorder list
+          li=>list item
+          ol=>order list ( au sein de ol  reversed :reverse l'ordre des elements , start :choisi le numero dans laquelle on veut start , type : le type de numeration )
+          value=>on peut definir le type dans li
+          dl=>description text
+          dt=> term
+          dd=>description term
+          table : thead , tbody , tfoot
+          caption=>title of the table
+          colspan => deux cases dans une seule case (ndmaj deux case f 1)
+          span=> isoler le mot pour le modifier sans aucun probleme
+          br=>retourne à la ligne 
+          hr => horizontal rule
+          div=>  countener selection des elements pour les modifie sans aucun problem et on peut les controler VERY IMPORTATTTTT
+          =>afficher<p> on la remplace par &lt;p&gt  plusieurs symbole existent HTML Character Entities inside dev
+     -->
+          <p> Get ready to do something special , <br> married </br></p>
+          <hr>
+          <p> do what you  wanna do</p>
+          <div>
+               <h1>you live two lives </h1>
+               <dev> do what you &lt;p&gt; wanna do in the limeted</dev>
+          </div>
+          
+          <ul>
+            <li>html</li>
+            <li>ccs</li>
+            <li>java
+               <UL>angular</UL>
+               <ul>React</ul>
+               <ul>js</ul>
+            </li>
+          </ul>
+
+          <ol >
+               <li value="2">nom</li>
+               <li>prenom</li>
+               <li>adrees</li>
+               <li>email</li>
+          </ol>
+
+          <dl>
+               <dt>html</dt>
+               <dd>language of the web</dd>
+               <dt>css</dt>
+               <dd>language of the visuals</dd>
+          </dl>
+          <table>
+               <caption>
+                    <strong>listes des etudiants</strong>
+               </caption>
+               <thead>
+                    <tr>
+                         <td>nom</td>
+                         <td>prenom</td>
+                         <td>num</td>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <td>elmohsine</td>
+                         <td>Nouhaila</td>
+                         <td>3</td>
+                    </tr>
+                    <tr>
+                         <td>elmohsine</td>
+                         <td>Nouhaila</td>
+                         <td>3</td>
+                    </tr>
+                    <tr>
+                         <td>elmohsine</td>
+                         <td>Nouhaila</td>
+                         <td>3</td>
+                    </tr>
+               </tbody>
+               <tfoot>
+                    <tr>
+                         
+                         <td colspan="2">resulat</td>
+                         <td>9</td>
+                    </tr>
+               </tfoot>
+          </table>
+
+          <hr>
+          <p>this is my book store , welcome</p>
+
+          <div>
+
+
+            <div class="Romantic book">
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+            </div>
+
+            <hr>
+
+            <div class="dramatic">
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+            </div>
+
+            <hr>
+
+            <div class="action">
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+               <div class="book">
+                    <h1>title</h1>
+                    <p>description</p>
+                    <span>133$</span>
+               </div>
+            </div>
+
+          </div>
+
+      
+      <!--<P >this is my <b>book store</b> , welcome</P> 
+       <P >this is my <i>book store</i>, welcome</P> 
+       <P >this is my <mark>book store</mark>, welcome</P> 
+       <P >this is my <u>book store</u>, welcome</P>
+       <P >this is my book store, <small>welcome</small></P>
+       <P >this is my book store, <del>welcome</del></P>
+       <h2> tittle chapitre <ins>inside book </ins></h2>
+       <p><del>2000</del>1300</p>
+       <p>H <sub>2</sub>O</p>
+       <p>H <sup>2</sup>O</p>
+       <a href="https://www.google.com/?hl=fr" target="_blank"> Google</a>
+       <a href="https://www.Facebook.com/?hl=fr">Facebook</a>
+       <a href="mailto : nouhailaaamohsine@gmail.com">Contact me</a>-->
+       <!--<img src="https://img.freepik.com/vecteurs-libre/carte-ramadan-kareem-elegant-fond-coran_1035-18783.jpg" alt="" width="400px">-->
+       <!-- meme on fait espace html l'ignore l'espace on utilise l'element pragraph  dispaly block  -->
+      <!-- elements attributs pour plus de detaille , global attribut on peut le rajouter dans quelque soit la partie de html body , paragraph-->
+      <!--glabal attribut hidden(n'affiche pas)- class-->
+      <!--<P class="one">this is my book store , welcome</P> 
+      <p hidden>have a big sale</p>-->
+      <!--ily'a des attributs specifique pour un element for exemple img au contraire a <p> il n'a pas --->
+      
+
+  </body>
+</html>
