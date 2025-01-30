@@ -83,28 +83,111 @@
      <footer>
              footer
      </footer>
-     <form>
+     <form  action="">
           <div>
                <label>Username</label>
-               <input type="text" required placeholder="nom"> <!-- ce case est obligatoire de la remplir  , placeholder: indiquer ce que dois ecrire-->
+               <input type="text" required placeholder="nom" name="nom"> <!-- ce case est obligatoire de la remplir  , placeholder: indiquer ce que dois ecrire-->
           </div>
           <br>
           <div>
                <label>school</label>
-               <input type="text" > 
+               <input type="text" name="ecole" autofocus >  
           </div>
           <br>
           <div>
                <label>password</label>
-               <input type="password" required placeholder="entrer un mot passe complexe">
+               <input type="password" required placeholder="entrer un mot passe complexe" name="pass" minlength="5" maxlength="12">
           </div>
           <br>
           <div>
                <label>email</label>
-               <input type="email" placeholder="entrer un email vailde " value="nouhailaaamohsine@gmail.ma">
+               <input type="email" placeholder="entrer un email vailde " value="nouhailaaamohsine@gmail.ma" name="mail" readonly> 
           </div>
           <br>
+          <div>
+               <label>color</label>
+               <input type="color"  name="color">
+          </div>
+          <br>
+          <div>
+               <label>Range</label>
+               <input type="range"  name="range" min="0"  max="100" step="20" value="20">
+          </div>
+          <br>
+          <div>
+               <label>Number</label>
+               <input type="number"  name="number" >
+          </div>
+          <br>
+          <div>
+               
+               <input id="win" type="radio"  name="os" value="windows" >
+               <label for="win">  Windows</label>
+          </div>
+          <div>
+               
+               <input id="lin" type="radio"  name="os" value="linux" >
+               <label for="lin">linux</label>
+
+          </div>
+          <div>
+               <input id="ma"    type="radio"  name="os" value="mac">
+               <label for="ma">mac</label>
+          </div>
+
+          <br>
+          <div>
+               
+               <input id="win1" type="checkbox"  name="os" value="windows" >
+               <label for="win1">  Windows</label>
+          </div>
+          <div>
+               
+               <input id="lin1" type="checkbox"  name="os" value="linux" >
+               <label for="lin1">linux</label>
+
+          </div>
+          <div>
+               <input id="ma1"    type="checkbox"  name="os" value="mac">
+               <label for="ma1">mac</label>
+          </div>
+          <br>
+          <label for="book">choose a book:</label>
+          <select name="book" id="book" >
+               <optgroup label="romans">
+                    <option value="1">book1</option>
+                    <option value="2">book2</option>
+                    <option value="3">book3</option>
+                    <option value="4">book4</option>
+               </optgroup>
+               <optgroup label="islamic books">
+                    <option value="5">book1</option>
+                    <option value="6">book2</option>
+                    <option value="7">book3</option>
+                    <option value="8">book4</option>
+               </optgroup>
+               <optgroup label="romantic books">
+                    <option value="9">book1</option>
+                    <option value="10">book2</option>
+                    <option value="11">book3</option>
+                    <option value="12">book4</option>
+               </optgroup>
+          </select>
+          <hr>
+          <textarea name="topic" , cols="40" , rows="19" , placeholder="entrer un texte"></textarea>
+          <hr>
           <input type="submit"  value="save"> <!-- envoyer les donnees entrees-->
+          <input type="reset"  value="reset"> 
+          <!-- input de type  hidden  une valeur d'une case mais elle n'est pas apparut non de sens securite non seulemnt c'est pas l'appel que user voir
+           ona  aussi reset à la place de faire submit (envoyer ) on fait reset 
+           on peut ajouter readonly dans input pour une valeur ne peut pas etre modifie  on peut la copier mais la modifier non 
+           ona aussi disabled   la valeur est fixe mais il  ne transmet pas 
+           ona autofocus une fois user entrer page focus sur une tache qu'il faut la remplir la premier
+           ona minlength  le nombre de caractere minimale qu'il faut entrer  maxlenght : le nombre des caracteres maximales 
+           ona radio choix unique , on ajoute id et for pour que l'etiquette doit etre connectee avec petit cercle si on click sur windox cercle cochée
+            checkbox  c'est comme radio mais avec choix multiple
+           select : si ona plusieurs choix nombre des choix très grands 
+           textarea : une zone pour un texte -->
      </form>
 
 
