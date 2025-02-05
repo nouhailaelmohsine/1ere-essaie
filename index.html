@@ -1,21 +1,96 @@
 <!--instructions pour utilisateur pour l'indiquer que tu as travailler sur html , on peut ecrire doctype en miniscule ,  -->
 <!DOCTYPE html>
 <html>
-  <head>
-       <title>book store</title>
-       <!-- this meta pour la desciption bla bla -->
-       <meta charset = "UTF-8"/>
-       <meta name="description" content = "this is our book "/>
-       <!-- this is comment -->
-       <style></style>
-       <script></script>
-       <link rel="stylesheet" href=""/>
-  </head>
 
-  <body>
+<head>
+     <title>book store</title>
+     <!-- this meta pour la desciption bla bla -->
+     <meta charset="UTF-8" />
+     <meta name="description" content="this is our book " />
+     <!-- this is comment -->
+     <style></style>
+     <script></script>
+     <link rel="stylesheet" href="" />
+     <style>
+          .ready-button {
+               color: black;
+               background-color: brown;
+               border: none;
+               cursor: pointer;
+               margin: left 15px;
+               font-size: large;
+               font-weight: bold;
+               transition: opacity 1s;
+               padding-top: 8px;
+               padding-bottom: 8px;
+               padding-left: 10px;
+               padding-right: 10px;
 
-    <!-- h1 - h6 heading=tittres --> 
+          }
+
+          .ready-button:hover {
+               opacity: 0, 6;
+          }
+
+          .ready-button:active {
+               opacity: 0, 4;
+          }
+
+
+          .doing-button {
+               color: brown;
+               background-color: bisque;
+               height: 36px;
+               width: 70px;
+               border: none;
+               cursor: pointer;
+               margin: left 15px;
+               font-size: large;
+               font-weight: bold;
+               vertical-align: top;
+
+          }
+
+          .doing-button:hover {
+               background-color: brown;
+               color: bisque;
+
+          }
+
+          .carte-button {
+               color: brown;
+               background-color: bisque;
+               height: 36px;
+               width: 70px;
+               border: none;
+               cursor: pointer;
+               font-size: 20px;
+               font-weight: bold;
+               vertical-align: top;
+
+          }
+
+          figcaption {
+               color: saddlebrown;
+               font-style: oblique;
+               font-weight: 800;
+
+          }
+
+          img {
+               height: 100;
+               width: 100;
+               border-radius: 18px;
+               border: none;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- h1 - h6 heading=tittres -->
      <!-- structure avec div purement -->
+     <!--
      <div class="header">
        <h2>Logo</h2>
        <ul>
@@ -37,17 +112,17 @@
 
       </div>
       <hr>
-      <div class="contenent"> <!-- à droite -->
+      <div class="contenent"> 
           content
       </div>
-      <div class="sidebar">  <!-- à gauche -->
+      <div class="sidebar">  
          sidebar
       </div>
       <hr>
       <div class="footer">
           footer
       </div> 
-      <!-- structure avec semantique elements-->
+      
       <header>
           <h2>Logo</h2>
           <ul>
@@ -67,93 +142,105 @@
                   <li>link</li>
           </ul>
    
-     </nav>
-         <hr>
+     </nav> 
+     -->
+     <hr>
      <section> <!-- à droite -->
-        <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ramadan_kareem.jpg/800px-Ramadan_kareem.jpg" alt=""  width="400px">
-        <figcaption>‏رمضان يَدنو والقلوب تشوَقت</figcaption>
-        </figure>  
+          <figure>
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ramadan_kareem.jpg/800px-Ramadan_kareem.jpg"
+                    alt="" width="200px">
+               <figcaption>‏رمضان يَدنو والقلوب تشوَقت <br> ونسائِمُ الذكرى يَفيضُ حَنينُها </figcaption>
+          </figure>
+          <button class="ready-button"> get ready with us </button>
+          <button class="doing-button"> doing </button>
+          <button class="carte-button"> cartes</button>
      </section>
-         
-     <aside> <!-- à gauche -->
-            sidebar
+     <!--
+     <aside> 
+          sidebar
      </aside>
      <hr>
      <footer>
-             footer
+          footer
      </footer>
-     <form  action="">
+     -->
+
+     <hr>
+
+     <form action="">
           <div>
                <label>Username</label>
-               <input type="text" required placeholder="nom" name="nom"> <!-- ce case est obligatoire de la remplir  , placeholder: indiquer ce que dois ecrire-->
+               <input type="text" required placeholder="nom" name="nom">
+               <!-- ce case est obligatoire de la remplir  , placeholder: indiquer ce que dois ecrire-->
           </div>
           <br>
           <div>
                <label>school</label>
-               <input type="text" name="ecole" autofocus >  
+               <input type="text" name="ecole" autofocus>
           </div>
           <br>
           <div>
                <label>password</label>
-               <input type="password" required placeholder="entrer un mot passe complexe" name="pass" minlength="5" maxlength="12">
+               <input type="password" required placeholder="entrer un mot passe complexe" name="pass" minlength="5"
+                    maxlength="12">
           </div>
           <br>
           <div>
                <label>email</label>
-               <input type="email" placeholder="entrer un email vailde " value="nouhailaaamohsine@gmail.ma" name="mail" readonly> 
+               <input type="email" placeholder="entrer un email vailde " value="nouhailaaamohsine@gmail.ma" name="mail"
+                    readonly>
           </div>
           <br>
           <div>
                <label>color</label>
-               <input type="color"  name="color">
+               <input type="color" name="color">
           </div>
           <br>
           <div>
                <label>Range</label>
-               <input type="range"  name="range" min="0"  max="100" step="20" value="20">
+               <input type="range" name="range" min="0" max="100" step="20" value="20">
           </div>
           <br>
           <div>
                <label>Number</label>
-               <input type="number"  name="number" >
+               <input type="number" name="number">
           </div>
           <br>
           <div>
-               
-               <input id="win" type="radio"  name="os" value="windows" >
-               <label for="win">  Windows</label>
+
+               <input id="win" type="radio" name="os" value="windows">
+               <label for="win"> Windows</label>
           </div>
           <div>
-               
-               <input id="lin" type="radio"  name="os" value="linux" >
+
+               <input id="lin" type="radio" name="os" value="linux">
                <label for="lin">linux</label>
 
           </div>
           <div>
-               <input id="ma"    type="radio"  name="os" value="mac">
+               <input id="ma" type="radio" name="os" value="mac">
                <label for="ma">mac</label>
           </div>
 
           <br>
           <div>
-               
-               <input id="win1" type="checkbox"  name="os" value="windows" >
-               <label for="win1">  Windows</label>
+
+               <input id="win1" type="checkbox" name="os" value="windows">
+               <label for="win1"> Windows</label>
           </div>
           <div>
-               
-               <input id="lin1" type="checkbox"  name="os" value="linux" >
+
+               <input id="lin1" type="checkbox" name="os" value="linux">
                <label for="lin1">linux</label>
 
           </div>
           <div>
-               <input id="ma1"    type="checkbox"  name="os" value="mac">
+               <input id="ma1" type="checkbox" name="os" value="mac">
                <label for="ma1">mac</label>
           </div>
           <br>
           <label for="book">choose a book:</label>
-          <select name="book" id="book" >
+          <select name="book" id="book">
                <optgroup label="romans">
                     <option value="1">book1</option>
                     <option value="2">book2</option>
@@ -176,8 +263,8 @@
           <hr>
           <textarea name="topic" , cols="40" , rows="19" , placeholder="entrer un texte"></textarea>
           <hr>
-          <input type="submit"  value="save"> <!-- envoyer les donnees entrees-->
-          <input type="reset"  value="reset"> 
+          <input type="submit" value="save"> <!-- envoyer les donnees entrees-->
+          <input type="reset" value="reset">
           <!-- input de type  hidden  une valeur d'une case mais elle n'est pas apparut non de sens securite non seulemnt c'est pas l'appel que user voir
            ona  aussi reset à la place de faire submit (envoyer ) on fait reset 
            on peut ajouter readonly dans input pour une valeur ne peut pas etre modifie  on peut la copier mais la modifier non 
@@ -191,15 +278,15 @@
      </form>
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
      <!-- b=> Bold
           strong=>Bold ;meme que bold mais strong pour  important text
           i=>italique
@@ -243,7 +330,7 @@
 
 
 
-          <!--<p> Get ready to do something special , <br> married </br></p>
+     <!--<p> Get ready to do something special , <br> married </br></p>
           <hr>
           <p> do what you  wanna do</p>
           <div>
@@ -314,7 +401,7 @@
           <hr>
           <p>this is my book store , welcome</p> -->
 
-          <!--<div>
+     <!--<div>
 
 
             <div class="Romantic book">
@@ -377,8 +464,8 @@
 
           </div> -->
 
-      
-      <!--<P >this is my <b>book store</b> , welcome</P> 
+
+     <!--<P >this is my <b>book store</b> , welcome</P> 
        <P >this is my <i>book store</i>, welcome</P> 
        <P >this is my <mark>book store</mark>, welcome</P> 
        <P >this is my <u>book store</u>, welcome</P>
@@ -390,14 +477,15 @@
        <a href="https://www.google.com/?hl=fr" target="_blank"> Google</a>  target="_blank" ouvrir le lien dans une nouvelle page
        <a href="https://www.Facebook.com/?hl=fr">Facebook</a>
        <a href="mailto : nouhailaaamohsine@gmail.com">Contact me</a>-->
-       <!--<img src="https://img.freepik.com/vecteurs-libre/carte-ramadan-kareem-elegant-fond-coran_1035-18783.jpg" alt="" width="400px">-->
-       <!-- meme on fait espace html l'ignore l'espace on utilise l'element pragraph  dispaly block  -->
-      <!-- elements attributs pour plus de detaille , global attribut on peut le rajouter dans quelque soit la partie de html body , paragraph-->
-      <!--glabal attribut hidden(n'affiche pas)- class-->
-      <!--<P class="one">this is my book store , welcome</P> 
+     <!--<img src="https://img.freepik.com/vecteurs-libre/carte-ramadan-kareem-elegant-fond-coran_1035-18783.jpg" alt="" width="400px">-->
+     <!-- meme on fait espace html l'ignore l'espace on utilise l'element pragraph  dispaly block  -->
+     <!-- elements attributs pour plus de detaille , global attribut on peut le rajouter dans quelque soit la partie de html body , paragraph-->
+     <!--glabal attribut hidden(n'affiche pas)- class-->
+     <!--<P class="one">this is my book store , welcome</P> 
       <p hidden>have a big sale</p>-->
-      <!--ily'a des attributs specifique pour un element for exemple img au contraire a <p> il n'a pas -->
-      
+     <!--ily'a des attributs specifique pour un element for exemple img au contraire a <p> il n'a pas -->
 
-  </body>
+
+</body>
+
 </html>
